@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-29 17:56:32.667725",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "gs1_application_identifier_21_section",
+  "value"
+ ],
+ "fields": [
+  {
+   "description": "Serial Number",
+   "fieldname": "gs1_application_identifier_21_section",
+   "fieldtype": "Section Break",
+   "label": "GS1 Application Identifier 21"
+  },
+  {
+   "description": "Max 20 characters serial number",
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Value",
+   "length": 20
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-29 17:58:29.599198",
+ "modified_by": "Administrator",
+ "module": "GS1",
+ "name": "GS1AI21",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

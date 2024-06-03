@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-03 19:28:53.259858",
+ "description": "Barcode Scan lines for any item which is being received into a warehouse.  From here it can be automatically processed to create Stock Entry or other transactions.  Each barcode scan is specific to a user and a warehouse.",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "receiving_warehouse",
+  "scan_gs1_barcode_section",
+  "scan_barcode",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "scan_gs1_barcode_section",
+   "fieldtype": "Section Break",
+   "label": "Scan GS1 Barcode"
+  },
+  {
+   "fieldname": "receiving_warehouse",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Receiving Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "description": "GS1 compliant barcode without spaces e.g. <b>01</b>99310176000082<b>17</b>240901<b>3101</b>000133<b>21</b>0000001",
+   "fieldname": "scan_barcode",
+   "fieldtype": "Data",
+   "label": "Scan Barcode",
+   "options": "Barcode",
+   "reqd": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Scan Lines",
+   "options": "WMS Inbound Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-03 19:48:49.990616",
+ "modified_by": "Administrator",
+ "module": "GS1",
+ "name": "WMS Inbound",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

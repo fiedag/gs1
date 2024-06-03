@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-03 19:46:41.451791",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "barcode",
+  "item_code",
+  "ai00",
+  "ai01",
+  "ai15",
+  "ai17",
+  "ai12",
+  "ai10",
+  "ai21",
+  "ai37",
+  "ai400",
+  "ai401",
+  "ai3102",
+  "ai3101",
+  "ai3100"
+ ],
+ "fields": [
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode",
+   "options": "Barcode"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "description": "18 character fixed length Serial Shipping Container Code",
+   "fieldname": "ai00",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SSCC",
+   "length": 18
+  },
+  {
+   "description": "Fixed 14 character Global Trade Item Number",
+   "fieldname": "ai01",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "GTIN",
+   "length": 14
+  },
+  {
+   "description": "Fixed 6 digit Best Before Date (YYMMDD)",
+   "fieldname": "ai15",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Best Before Date"
+  },
+  {
+   "fieldname": "ai17",
+   "fieldtype": "Data",
+   "label": "Expiration Date"
+  },
+  {
+   "fieldname": "ai12",
+   "fieldtype": "Data",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "ai10",
+   "fieldtype": "Data",
+   "label": "Batch or Lot Number"
+  },
+  {
+   "fieldname": "ai21",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "ai37",
+   "fieldtype": "Data",
+   "label": "Number of Units Contained"
+  },
+  {
+   "fieldname": "ai400",
+   "fieldtype": "Data",
+   "label": "Customer Purchase Order Number"
+  },
+  {
+   "fieldname": "ai401",
+   "fieldtype": "Data",
+   "label": "Consignment Number"
+  },
+  {
+   "fieldname": "ai3102",
+   "fieldtype": "Data",
+   "label": "Net Metric Weight (10g)"
+  },
+  {
+   "fieldname": "ai3101",
+   "fieldtype": "Data",
+   "label": "Net Metric Weight (100g)"
+  },
+  {
+   "fieldname": "ai3100",
+   "fieldtype": "Data",
+   "label": "Net Metric Weight (kg)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-03 20:00:15.858344",
+ "modified_by": "Administrator",
+ "module": "GS1",
+ "name": "WMS Inbound Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
